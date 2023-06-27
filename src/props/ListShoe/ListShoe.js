@@ -6,16 +6,137 @@ import ShoeDetail from './ShoeDetail';
 export default class ListShoe extends Component {
     // arr = ['applephone.jpg', 'applephone.jpg'];
     arrShoe = [
-        { "maSP": 1, "tenSP": "Addidas 112", "Color": "Red", "size": "X, L, M", "giaBan": 1000000, "hinhAnh": "./img/red.png" },
-        { "maSP": 2, "tenSP": "Addidas 300", "Color": "Black", "size": "X, L, M", "giaBan": 1200000, "hinhAnh": "./img/black.jpg" },
-        { "maSP": 3, "tenSP": "Addidas 422", "Color": "Green", "size": "X, L, M", "giaBan": 800000, "hinhAnh": "./img/green.png" },
-        { "maSP": 4, "tenSP": "Addidas 113", "Color": "Blue", "size": "X, L, M", "giaBan": 700000, "hinhAnh": "./img/blue.png" },
-        { "maSP": 5, "tenSP": "Addidas 999", "Color": "Grey type 1", "size": "X, L, M", "giaBan": 400000, "hinhAnh": "./img/grey.jpg" },
-        { "maSP": 6, "tenSP": "Addidas 999", "Color": "Grey type 2", "size": "X, L, M", "giaBan": 600000, "hinhAnh": "./img/grey2.png" },
+        {
+            "id": 1,
+            "name": "Adidas Prophere",
+            "alias": "adidas-prophere",
+            "price": 350,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 995,
+            "image": "http://svcy3.myclass.vn/images/adidas-prophere.png"
+          },
+          {
+            "id": 2,
+            "name": "Adidas Prophere Black White",
+            "alias": "adidas-prophere-black-white",
+            "price": 450,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 990,
+            "image": "http://svcy3.myclass.vn/images/adidas-prophere-black-white.png"
+          },
+          {
+            "id": 3,
+            "name": "Adidas Prophere Customize",
+            "alias": "adidas-prophere-customize",
+            "price": 375,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 415,
+            "image": "http://svcy3.myclass.vn/images/adidas-prophere-customize.png"
+          },
+          {
+            "id": 4,
+            "name": "Adidas Super Star Red",
+            "alias": "adidas-super-star-red",
+            "price": 465,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 542,
+            "image": "http://svcy3.myclass.vn/images/adidas-super-star-red.png"
+          },
+          {
+            "id": 5,
+            "name": "Adidas Swift Run",
+            "alias": "adidas-swift-run",
+            "price": 550,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 674,
+            "image": "http://svcy3.myclass.vn/images/adidas-swift-run.png"
+          },
+          {
+            "id": 6,
+            "name": "Adidas Tenisky Super Star",
+            "alias": "adidas-tenisky-super-star",
+            "price": 250,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 456,
+            "image": "http://svcy3.myclass.vn/images/adidas-tenisky-super-star.png"
+          },
+          {
+            "id": 7,
+            "name": "Adidas Ultraboost 4",
+            "alias": "adidas-ultraboost-4",
+            "price": 450,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 854,
+            "image": "http://svcy3.myclass.vn/images/adidas-ultraboost-4.png"
+          },
+          {
+            "id": 8,
+            "name": "Adidas Yeezy 350",
+            "alias": "adidas-yeezy-350",
+            "price": 750,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 524,
+            "image": "http://svcy3.myclass.vn/images/adidas-yeezy-350.png"
+          },
+          {
+            "id": 9,
+            "name": "Nike Adapt BB",
+            "alias": "nike-adapt-bb",
+            "price": 630,
+            "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+            "shortDescription": "Paul George is the rare high-percentage shooter",
+            "quantity": 599,
+            "image": "http://svcy3.myclass.vn/images/nike-adapt-bb.png"
+          },
+          {
+            "id": 10,
+            "name": "Nike Air Max 97",
+            "alias": "nike-air-max-97",
+            "price": 650,
+            "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+            "shortDescription": "Paul George is the rare high-percentage shooter",
+            "quantity": 984,
+            "image": "http://svcy3.myclass.vn/images/nike-air-max-97.png"
+          },
+          {
+            "id": 11,
+            "name": "Nike Air Max 97 Blue",
+            "alias": "nike-air-max-97-blue",
+            "price": 450,
+            "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+            "shortDescription": "Paul George is the rare high-percentage shooter",
+            "quantity": 875,
+            "image": "http://svcy3.myclass.vn/images/nike-air-max-97-blue.png"
+          },
+          {
+            "id": 12,
+            "name": "Nike Air Max 270 React",
+            "alias": "nike-air-max-270-react",
+            "price": 750,
+            "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+            "shortDescription": "Paul George is the rare high-percentage shooter",
+            "quantity": 445,
+            "image": "http://svcy3.myclass.vn/images/nike-air-max-270-react.png"
+          }
     ];
     state = {
         ShoeItem: {
-             "maSP": 1, "tenSP": "Addidas 112", "Color": "Red", "size": "X, L, M", "giaBan": 1000000, "hinhAnh": "./img/red.jpg" 
+            "id": 1,
+            "name": "Adidas Prophere",
+            "alias": "adidas-prophere",
+            "price": 350,
+            "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+            "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+            "quantity": 995,
+            "image": "http://svcy3.myclass.vn/images/adidas-prophere.png"
         }
     };
     xemChiTietSP = (item) => { 
@@ -41,26 +162,26 @@ export default class ListShoe extends Component {
                     </div>
                     <div className="row m-5">
                         <div className='col-4'>
-                            <img className='w-50' src={this.state.ShoeItem.hinhAnh} alt='' />
+                            <img className='w-75' src={this.state.ShoeItem.image} alt='' />
                         </div>
                         <div className="col-8">
                             <h2>Chi tiết sản phẩm</h2>
                             <table cellPadding={"20px"}>
                                 <tr>
-                                    <td>Tên sản phẩm</td>
-                                    <td>{this.state.ShoeItem.tenSP}</td>
+                                    <td>Tên sản phẩm:</td>
+                                    <td>{this.state.ShoeItem.name}</td>
                                 </tr>
                                 <tr>
-                                    <td>Color</td>
-                                    <td>{this.state.ShoeItem.Color}</td>
+                                    <td>Chất lượng:</td>
+                                    <td>{this.state.ShoeItem.quantity}</td>
                                 </tr>
                                 <tr>
-                                    <td>Giá</td>
-                                    <td>{this.state.ShoeItem.giaBan}</td>
+                                    <td>Mô tả:</td>
+                                    <td>{this.state.ShoeItem.shortDescription}</td>
                                 </tr>
                                 <tr>
-                                    <td>Size</td>
-                                    <td>{this.state.ShoeItem.size}</td>
+                                    <td>Giá bán:</td>
+                                    <td>{this.state.ShoeItem.price}</td>
                                 </tr>
                             </table>
                         </div>
